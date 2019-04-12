@@ -1,0 +1,47 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+
+import co.com.fincaraiz.qa.screenplayfincaraiz.models.SearchModel;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Managed;
+
+public class ScreenplayFincaRaizStepDefinitions {
+	@Managed(driver="chrome")
+	WebDriver hisBrowser; 
+	
+	private Actor user = Actor.named("Mateo");
+	
+	@Before 
+	public void setup() {
+		user.can(BrowseTheWeb. with(hisBrowser)); 
+	}
+	
+	public ScreenplayFincaRaizStepDefinitions() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	@Given("^He is in the fincaraiz home page$")
+	public void heIsInTheFincaraizHomePage() throws Exception {
+	    
+	}
+
+	@When("^He select the search options$")
+	public void heSelectTheSearchOptions(List<SearchModel> searchModel) throws Exception {
+
+	}
+
+	@Then("^He must see that the results match with his search$")
+	public void heMustSeeThatTheResultsMatchWithHisSearch() throws Exception {
+
+	}
+
+}

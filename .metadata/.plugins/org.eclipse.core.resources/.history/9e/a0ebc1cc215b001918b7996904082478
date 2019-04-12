@@ -1,0 +1,9 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions;
+
+public class Sce {
+
+	public Sce() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

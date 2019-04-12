@@ -1,0 +1,9 @@
+package co.com.google.certificacion.miprimerscreenplay.models;
+
+public class Phrase {
+
+	public Phrase() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

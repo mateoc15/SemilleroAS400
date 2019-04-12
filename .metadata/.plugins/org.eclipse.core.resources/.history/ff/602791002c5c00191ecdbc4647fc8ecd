@@ -1,0 +1,24 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.tasks;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+import static co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.ListResultPage.LIST_RESULT;
+
+public class SelectResult implements Task{
+
+	public static Performable getRandomResult() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+
+		actor.attemptsTo(
+				Click.on(LIST_RESULT.resolveAllFor(actor).get(0))
+				);
+	}
+
+}

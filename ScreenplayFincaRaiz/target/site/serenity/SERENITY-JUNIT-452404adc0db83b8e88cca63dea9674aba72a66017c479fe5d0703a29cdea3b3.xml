@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Look for an apartment" skipped="0" tests="2" time="66.0" timestamp="2019-04-12 08:43:25"><testcase name="Custom search"><failure message="La busqueda no retornó resultados - &#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">La busqueda no retornó resultados - 
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>La busqueda no retornó resultados - 
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions.ScreenplayFincaRaizStepDefinitions.heMustSeeThatTheSearchReturnResults(ScreenplayFincaRaizStepDefinitions.java:67)&#13;
+✽.He must see that the search return results(src/test/resources/features/CustomSearch.feature:11)&#13;
+</system-err></testcase></testsuite>

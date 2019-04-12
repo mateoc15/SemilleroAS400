@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Search in google with data from feature" skipped="0" tests="3" time="55.11" timestamp="2019-04-05 12:34:44"><testcase name="buscar en google"><failure message="La frase encontrada no corresponde a la busqueda - &#10;Expected: is &quot;kjadshkjashdkjhaskjd&quot;&#10;     but: was &quot;hola tres&quot;" type="java.lang.AssertionError">La frase encontrada no corresponde a la busqueda - 
+Expected: is "kjadshkjashdkjhaskjd"
+     but: was "hola tres"</failure><system-err>La frase encontrada no corresponde a la busqueda - 
+Expected: is "kjadshkjashdkjhaskjd"
+     but: was "hola tres"&#13;
+co.com.google.certificacion.miprimerscreenplay.stepsdefinitions.BusquedaEnGoogleStepsDefinitions.elVerificaQueLaPalabraEsteEnLosResultados(BusquedaEnGoogleStepsDefinitions.java:58)&#13;
+✽.el verifica que la palabra "kjadshkjashdkjhaskjd" este en los resultados(src/test/resources/features/BusquedaEnGoogle.feature:10)&#13;
+</system-err></testcase></testsuite>

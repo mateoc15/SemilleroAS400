@@ -1,0 +1,39 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import co.com.fincaraiz.qa.screenplayfincaraiz.tasks.FillSearchField;
+import co.com.fincaraiz.qa.screenplayfincaraiz.tasks.SelectResult;
+import co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.FincaRaizHomePage;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.thucydides.core.annotations.Managed;
+
+public class SelectResultItemStepDefinitions {
+	
+	public  static final int USUARIO_EN_ESCENA = 0;
+	@Managed(driver="chrome")
+	WebDriver hisBrowser; 
+	
+	private Actor user = Actor.named("Mateo");
+	
+	FincaRaizHomePage fincaRaizHomePage;
+	
+	
+	@Given("^The page returned the result of the search$")
+	public void thePageReturnedTheResultOfTheSearch() throws Exception {
+
+	}
+
+	@When("^he clicks on a random result$")
+	public void heClicksOnARandomResult() throws Exception {
+		user.attemptsTo(SelectResult.getRandomResult());
+	}
+
+	@Then("^he checks the result matches with the search$")
+	public void heChecksTheResultMatchesWithTheSearch() throws Exception {
+
+	}
+}

@@ -1,0 +1,26 @@
+@tag
+Feature: Look for an apartment 
+  I want to search an apartment with the specific conditions
+
+
+  @tag2
+  Scenario Outline: Custom search
+    Given He is in the fincaraiz home page 
+    When select the search options
+      | user   | password   |
+      | <user> | <password> |
+    Then Deberia ver mi sesion iniciada
+
+    Examples: 
+      | user            | password    | destinatario                 | asunto |
+      | vivaserenity123 | Serenity123 | arturo.castllo1218@gmail.com | PRUEBA |
+  
+  Scenario Outline: Title of your scenario outline
+    Given I want to write a step with <name>
+    When I check for the <value> in step
+    Then I verify the <status> in step
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |

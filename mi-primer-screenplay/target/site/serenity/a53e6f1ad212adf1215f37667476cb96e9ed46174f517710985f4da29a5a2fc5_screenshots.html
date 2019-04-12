@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="0b3e8cfa807446210b07e191ea99053e35624f171fd95fc676fc0374bf7d3e39.html">Search In Google With Data From Feature</a></span>
+                > <span class="truncate-60"><a
+                    href="a53e6f1ad212adf1215f37667476cb96e9ed46174f517710985f4da29a5a2fc5.html">buscar en google </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-04-2019 00:34</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Search In Google With Data From Feature </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Arthur quiere hacer una busqueda en google con datos
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="095fb70a5155b4b01be72b93f1b4c51cab27094796115f0e543dc2649da60779.html">Smoketest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">buscar en google
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given arthur esta en el sitio de google<br>When el busca la frase compuesta<br>Then el verifica que la palabra "&lt;resultadoEsperado&gt;" este en los resultados</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: La frase encontrada no corresponde a la busqueda - Expected: is 'kjadshkjashdkjhaskjd' but: was 'hola tres'</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.google.certificacion.miprimerscreenplay.stepsdefinitions.BusquedaEnGoogleStepsDefinitions.elVerificaQueLaPalabraEsteEnLosResultados(BusquedaEnGoogleStepsDefinitions.java:58)<br />✽.el verifica que la palabra "kjadshkjashdkjhaskjd" este en los resultados(src/test/resources/features/BusquedaEnGoogle.feature:10)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource2026005703555344341.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Example #1: {palabra=switch, palabrados=uno, resultadoEsperado=switch uno}" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Given arthur esta en el sitio de google" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Do&ntilde;a Sara Dujast opens the Google home page" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Given arthur esta en el sitio de google (completed)" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" When el busca la frase compuesta
+| cadenaUno | cadenaDos |
+| switch | uno |" width="1366"/>
+                <img src="d5f74bc10d9779771e0301df4c15eaacf9a7e66db83a49670ed1e17f6a4b4704.png" title=" Do&ntilde;a sara dujast look up phrase" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Do&ntilde;a Sara Dujast enters 'switch uno' into la barra de busqueda" width="1366"/>
+                <img src="43e7e2e29a4c9000256b2170fe79f26ddb6de79c2929056efa433abf51f6653b.png" title=" Do&ntilde;a Sara Dujast enters 'switch uno' into la barra de busqueda (completed)" width="1366"/>
+                <img src="43e7e2e29a4c9000256b2170fe79f26ddb6de79c2929056efa433abf51f6653b.png" title=" Do&ntilde;a sara dujast look up phrase (completed)" width="1366"/>
+                <img src="43e7e2e29a4c9000256b2170fe79f26ddb6de79c2929056efa433abf51f6653b.png" title=" When el busca la frase compuesta
+| cadenaUno | cadenaDos |
+| switch | uno | (completed)" width="1366"/>
+                <img src="43e7e2e29a4c9000256b2170fe79f26ddb6de79c2929056efa433abf51f6653b.png" title=" Then el verifica que la palabra &quot;switch uno&quot; este en los resultados" width="1366"/>
+                <img src="43e7e2e29a4c9000256b2170fe79f26ddb6de79c2929056efa433abf51f6653b.png" title=" Then validar resultado should be 'switch uno'" width="1366"/>
+                <img src="43e7e2e29a4c9000256b2170fe79f26ddb6de79c2929056efa433abf51f6653b.png" title=" Then validar resultado should be 'switch uno' (completed)" width="1366"/>
+                <img src="43e7e2e29a4c9000256b2170fe79f26ddb6de79c2929056efa433abf51f6653b.png" title=" Then el verifica que la palabra &quot;switch uno&quot; este en los resultados (completed)" width="1366"/>
+                <img src="43e7e2e29a4c9000256b2170fe79f26ddb6de79c2929056efa433abf51f6653b.png" title=" Example #1: {palabra=switch, palabrados=uno, resultadoEsperado=switch uno} (completed)" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Example #2: {palabra=sophos solutions, palabrados=dos, resultadoEsperado=sophos solutions dos}" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Given arthur esta en el sitio de google" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Do&ntilde;a Sara Dujast opens the Google home page" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Given arthur esta en el sitio de google (completed)" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" When el busca la frase compuesta
+| cadenaUno | cadenaDos |
+| sophos solutions | dos |" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Do&ntilde;a sara dujast look up phrase" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Do&ntilde;a Sara Dujast enters 'sophos solutions dos' into la barra de busqueda" width="1366"/>
+                <img src="a8bffd7c7bd19d086b0c311463fcb5be3e5e9ab45574986d836654986ab74688.png" title=" Do&ntilde;a Sara Dujast enters 'sophos solutions dos' into la barra de busqueda (completed)" width="1366"/>
+                <img src="a8bffd7c7bd19d086b0c311463fcb5be3e5e9ab45574986d836654986ab74688.png" title=" Do&ntilde;a sara dujast look up phrase (completed)" width="1366"/>
+                <img src="a8bffd7c7bd19d086b0c311463fcb5be3e5e9ab45574986d836654986ab74688.png" title=" When el busca la frase compuesta
+| cadenaUno | cadenaDos |
+| sophos solutions | dos | (completed)" width="1366"/>
+                <img src="a8bffd7c7bd19d086b0c311463fcb5be3e5e9ab45574986d836654986ab74688.png" title=" Then el verifica que la palabra &quot;sophos solutions dos&quot; este en los resultados" width="1366"/>
+                <img src="a8bffd7c7bd19d086b0c311463fcb5be3e5e9ab45574986d836654986ab74688.png" title=" Then validar resultado should be 'sophos solutions dos'" width="1366"/>
+                <img src="a8bffd7c7bd19d086b0c311463fcb5be3e5e9ab45574986d836654986ab74688.png" title=" Then validar resultado should be 'sophos solutions dos' (completed)" width="1366"/>
+                <img src="a8bffd7c7bd19d086b0c311463fcb5be3e5e9ab45574986d836654986ab74688.png" title=" Then el verifica que la palabra &quot;sophos solutions dos&quot; este en los resultados (completed)" width="1366"/>
+                <img src="a8bffd7c7bd19d086b0c311463fcb5be3e5e9ab45574986d836654986ab74688.png" title=" Example #2: {palabra=sophos solutions, palabrados=dos, resultadoEsperado=sophos solutions dos} (completed)" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Example #3: {palabra=hola, palabrados=tres, resultadoEsperado=kjadshkjashdkjhaskjd}" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Given arthur esta en el sitio de google" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Do&ntilde;a Sara Dujast opens the Google home page" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Given arthur esta en el sitio de google (completed)" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" When el busca la frase compuesta
+| cadenaUno | cadenaDos |
+| hola | tres |" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Do&ntilde;a sara dujast look up phrase" width="1366"/>
+                <img src="e8dfb25eeca7241c38baaba3c90c9ccee08000f76b88cebdedaa36dfed006dcf.png" title=" Do&ntilde;a Sara Dujast enters 'hola tres' into la barra de busqueda" width="1366"/>
+                <img src="2c7070ec4e560f263f0003f0d4d27693569d8a2bb4bde1423c35674fbfd0ca35.png" title=" Do&ntilde;a Sara Dujast enters 'hola tres' into la barra de busqueda (completed)" width="1366"/>
+                <img src="2c7070ec4e560f263f0003f0d4d27693569d8a2bb4bde1423c35674fbfd0ca35.png" title=" Do&ntilde;a sara dujast look up phrase (completed)" width="1366"/>
+                <img src="2c7070ec4e560f263f0003f0d4d27693569d8a2bb4bde1423c35674fbfd0ca35.png" title=" When el busca la frase compuesta
+| cadenaUno | cadenaDos |
+| hola | tres | (completed)" width="1366"/>
+                <img src="2c7070ec4e560f263f0003f0d4d27693569d8a2bb4bde1423c35674fbfd0ca35.png" title=" Then el verifica que la palabra &quot;kjadshkjashdkjhaskjd&quot; este en los resultados" width="1366"/>
+                <img src="2c7070ec4e560f263f0003f0d4d27693569d8a2bb4bde1423c35674fbfd0ca35.png" title=" Then validar resultado should be 'kjadshkjashdkjhaskjd'" width="1366"/>
+                <img src="2c7070ec4e560f263f0003f0d4d27693569d8a2bb4bde1423c35674fbfd0ca35.png" title=" Then validar resultado should be 'kjadshkjashdkjhaskjd' (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.41</span>
+</div>
+</body>
+</html>

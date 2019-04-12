@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.fincaraiz.qa.screenplayfincaraiz.runners.ScreenPlayFincaRaizRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-LAFQ684S" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/CustomSearch.feature:16 ?[0m# Custom search
+?[31msrc/test/resources/features/SelectResultItem.feature:24 ?[0m# Select a result
+
+4 Scenarios (?[31m2 failed?[0m, ?[32m2 passed?[0m)
+18 Steps (?[31m2 failed?[0m, ?[32m16 passed?[0m)
+2m8,725s
+
+java.lang.AssertionError: La busqueda no retornó resultados - 
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:291)
+	at co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions.ScreenplayFincaRaizStepDefinitions.heMustSeeThatTheSearchReturnResults(ScreenplayFincaRaizStepDefinitions.java:67)
+	at ?.He must see that the search return results(src/test/resources/features/CustomSearch.feature:11)
+
+java.lang.AssertionError: El elemento seleccionado no coincide con la busqueda realizada - 
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:291)
+	at co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions.SelectResultItemStepDefinitions.heChecksTheResultMatchesWithTheSearch(SelectResultItemStepDefinitions.java:53)
+	at ?.He checks the result matches with the search(src/test/resources/features/SelectResultItem.feature:17)
+
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>

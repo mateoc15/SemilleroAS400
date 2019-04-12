@@ -1,0 +1,32 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.questions;
+
+import co.com.fincaraiz.qa.screenplayfincaraiz.models.SearchModel;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+import net.serenitybdd.screenplay.annotations.Subject;
+
+import static co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.PropertyDetailPage.CATEGORY_TRANSACTION;
+
+@Subject("validar resultado")
+public class PropertyDetails implements Question<String>{
+	SearchModel search;
+
+	public PropertyDetails(SearchModel search) {
+		this.search=search;
+	}
+	
+	@Override
+	public String answeredBy(Actor actor) {
+		String textToCompare = search.getCategoria()+" en "+search.getTransaccion();
+		System.out.println(textToCompare);
+		System.out.println(CATEGORY_TRANSACTION.resolveFor(actor).getText());
+		return CATEGORY_TRANSACTION.resolveFor(actor).getText();
+	}
+	
+	public static PropertyDetails matchWithData(SearchModel search) {
+		return new PropertyDetails(search);
+	}
+
+	
+
+}

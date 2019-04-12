@@ -1,0 +1,9 @@
+package co.com.google.certificacion.logingmailscreenplay.interactions;
+
+public class VisualizarContraseña {
+
+	public VisualizarContraseña() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

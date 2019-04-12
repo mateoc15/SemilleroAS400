@@ -1,0 +1,37 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.util;
+
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+
+import net.serenitybdd.core.pages.WebElementFacade;
+
+/**Utilidades
+ * @author SEMILLERO09
+ *
+ */
+public class Utilites {
+
+	/**
+	 * Constructor
+	 */
+	public Utilites() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	/**Método utilizado para generar un número
+	 * aleatorio y seleccionar un elemento de la 
+	 * lista de resultados de la búsqueda
+	 *
+	 * @param size
+	 * @return
+	 */
+	public static int randomNumber(int size) {
+		return (int) Math.floor(Math.random()*size);
+	}
+	
+	
+
+}

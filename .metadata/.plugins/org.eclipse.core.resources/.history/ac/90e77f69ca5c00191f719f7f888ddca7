@@ -1,0 +1,43 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.util;
+
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import co.com.fincaraiz.qa.screenplayfincaraiz.interactions.HighLightElement;
+import net.serenitybdd.core.pages.WebElementFacade;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.actions.ClickOnTarget;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class Highlight {
+	
+	WebDriver driver;
+	
+	public Highlight(WebDriver driver) {
+		super();
+		this.driver = driver;
+	}
+
+	public static Interaction the(Target target, WebDriver driver) {
+		return instrumented(HighLightElement.class, target, driver);
+	}
+	
+	public static Interaction transparent(Target target, WebDriver driver) {
+		return instrumented(UnHighLightElement.class, target, driver);
+	}
+
+	public void highlightElement(WebDriver driver, WebElementFacade element) {
+		if (driver instanceof JavascriptExecutor) {
+			((JavascriptExecutor) driver).executeScript("arguments[0].style.border='3px solid blue'", element);
+		}
+	}
+
+	public void transparentHighlight(WebDriver driver, WebElementFacade element) {
+		if (driver instanceof JavascriptExecutor) {
+			((JavascriptExecutor) driver).executeScript("arguments[0].style.border='3px solid transparent'", element);
+		}
+	}
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="d7fd00ee26cb6ceb88fa76a87b0f97650f8ea6f91d2051b2e378a02b250b2e29.html">Look For An Apartment</a></span>
+                > <span class="truncate-60"><a
+                    href="452404adc0db83b8e88cca63dea9674aba72a66017c479fe5d0703a29cdea3b3.html">Custom search </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-04-2019 08:43</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Look For An Apartment </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Mateo wants to search an apartment with the specific conditions
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="b5e849450306bf2a4e7e31196707ffb400a6301051ed273ff4b8b28a70d57b60.html">Smoketest2
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="168ef89153aabe502f57dfa1259ade97c1761b467aa29f505d202d2af1685cf3.html">Customsearch
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Custom search
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given User is in the fincaraiz home page<br>When He selects the search options<br>Then He must see that the search return results</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: La busqueda no retorn&oacute; resultados - Expected: is (true) but: was (false)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions.ScreenplayFincaRaizStepDefinitions.heMustSeeThatTheSearchReturnResults(ScreenplayFincaRaizStepDefinitions.java:67)<br />✽.He must see that the search return results(src/test/resources/features/CustomSearch.feature:11)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource1878185007629498747.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Example #1: {tipo=Vivienda, categoria=Casa, transaccion=Arriendo, ubicacion=Medellin}" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Given User is in the fincaraiz home page" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Mateo opens the Finca raiz home page" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Given User is in the fincaraiz home page (completed)" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" When He selects the search options
+| tipo | categoria | transaccion | ubicacion |
+| Vivienda | Casa | Arriendo | Medellin |" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Mateo fill search field" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" njn" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" njn (completed)" width="1034"/>
+                <img src="f691ea0ea5846594b217c9e0c26e15b13f26944a7d2a31ad4796592d97f859c3.png" title=" Mateo clicks on categories container" width="1034"/>
+                <img src="00f68c7fa1e1790f85f259db8437f63845f80584b4b36a7b5d713601537e5d56.png" title=" Mateo clicks on categories container (completed)" width="1034"/>
+                <img src="00f68c7fa1e1790f85f259db8437f63845f80584b4b36a7b5d713601537e5d56.png" title=" Unhighlight an element" width="1034"/>
+                <img src="a84b5bc7163b8948436361d409b8ffcf27de28b4064078b4b5d4b836c4be0c52.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="a84b5bc7163b8948436361d409b8ffcf27de28b4064078b4b5d4b836c4be0c52.png" title=" njn" width="1034"/>
+                <img src="245643f4be736b7bad185e908cd5cfc5dd2edb02d585c2477d931e1f803ee9f0.png" title=" njn (completed)" width="1034"/>
+                <img src="245643f4be736b7bad185e908cd5cfc5dd2edb02d585c2477d931e1f803ee9f0.png" title=" Mateo clicks on category item" width="1034"/>
+                <img src="556ae42c87fecc20e46b28c4f85a70e6e53f30871704b74d1ae44870cded20e7.png" title=" Mateo clicks on category item (completed)" width="1034"/>
+                <img src="556ae42c87fecc20e46b28c4f85a70e6e53f30871704b74d1ae44870cded20e7.png" title=" Unhighlight an element" width="1034"/>
+                <img src="556ae42c87fecc20e46b28c4f85a70e6e53f30871704b74d1ae44870cded20e7.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="556ae42c87fecc20e46b28c4f85a70e6e53f30871704b74d1ae44870cded20e7.png" title=" njn" width="1034"/>
+                <img src="33ea882c7fcf263c05fd187b0a399e1b6bde05f914fb1626d5f308396a43cd79.png" title=" njn (completed)" width="1034"/>
+                <img src="33ea882c7fcf263c05fd187b0a399e1b6bde05f914fb1626d5f308396a43cd79.png" title=" Mateo clicks on categories container" width="1034"/>
+                <img src="2dbf6fcb64e728364033c75853aa156fd8e9a96623603762d02218ea46a14da8.png" title=" Mateo clicks on categories container (completed)" width="1034"/>
+                <img src="2dbf6fcb64e728364033c75853aa156fd8e9a96623603762d02218ea46a14da8.png" title=" Unhighlight an element" width="1034"/>
+                <img src="2dbf6fcb64e728364033c75853aa156fd8e9a96623603762d02218ea46a14da8.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="05f988f7d7dbd0becf1c90dfad2e5fc786a15b26d071eed25542158cd1aa8178.png" title=" njn" width="1034"/>
+                <img src="9b7cf097302af40ae51f84c9c5994ef4e8369e6b973ec753bdbd6f24efa96684.png" title=" njn (completed)" width="1034"/>
+                <img src="9b7cf097302af40ae51f84c9c5994ef4e8369e6b973ec753bdbd6f24efa96684.png" title=" Mateo clicks on container transaction" width="1034"/>
+                <img src="e1672337f02ca45b7578df60c8413a2e635cedb1f54bcbb47d73da8151f321c5.png" title=" Mateo clicks on container transaction (completed)" width="1034"/>
+                <img src="e1672337f02ca45b7578df60c8413a2e635cedb1f54bcbb47d73da8151f321c5.png" title=" Mateo clicks on container transaction" width="1034"/>
+                <img src="04aa4489ad04b2326874bb5f3c16ff31278c30831324e710c9d115f8e1fd7eca.png" title=" Mateo clicks on container transaction (completed)" width="1034"/>
+                <img src="04aa4489ad04b2326874bb5f3c16ff31278c30831324e710c9d115f8e1fd7eca.png" title=" Unhighlight an element" width="1034"/>
+                <img src="32c8b878b0d1e66db809975fdbb16883a022df3bef3ec8ab2c7c52a121a896a6.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="32c8b878b0d1e66db809975fdbb16883a022df3bef3ec8ab2c7c52a121a896a6.png" title=" njn" width="1034"/>
+                <img src="1876ecbee47d7b5f984415a09bead8034cf6761ecd56fa59510d41de0ca60835.png" title=" njn (completed)" width="1034"/>
+                <img src="1876ecbee47d7b5f984415a09bead8034cf6761ecd56fa59510d41de0ca60835.png" title=" Mateo clicks on transaction type" width="1034"/>
+                <img src="bb66fe26cc61b5726039f51b52bccd2314bdc566ccaa1d1a69ea5131c2674af9.png" title=" Mateo clicks on transaction type (completed)" width="1034"/>
+                <img src="bb66fe26cc61b5726039f51b52bccd2314bdc566ccaa1d1a69ea5131c2674af9.png" title=" Unhighlight an element" width="1034"/>
+                <img src="bb66fe26cc61b5726039f51b52bccd2314bdc566ccaa1d1a69ea5131c2674af9.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="bb66fe26cc61b5726039f51b52bccd2314bdc566ccaa1d1a69ea5131c2674af9.png" title=" njn" width="1034"/>
+                <img src="276158d0082be5fd6a5d8dda895a061decba8d7ecc51de8775b918bcdb1b0689.png" title=" njn (completed)" width="1034"/>
+                <img src="276158d0082be5fd6a5d8dda895a061decba8d7ecc51de8775b918bcdb1b0689.png" title=" Mateo enters 'Medellin' into location search" width="1034"/>
+                <img src="1f10745a14a62e29d7cbbdc699592a5c6122ae77da69edc8294d47f829626ab3.png" title=" Mateo enters 'Medellin' into location search (completed)" width="1034"/>
+                <img src="1f10745a14a62e29d7cbbdc699592a5c6122ae77da69edc8294d47f829626ab3.png" title=" Unhighlight an element" width="1034"/>
+                <img src="1f10745a14a62e29d7cbbdc699592a5c6122ae77da69edc8294d47f829626ab3.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="1f10745a14a62e29d7cbbdc699592a5c6122ae77da69edc8294d47f829626ab3.png" title=" njn" width="1034"/>
+                <img src="02453b7279e0ce6e96649dacb3d030ff58e19db68fbb38927c250474bbda8aec.png" title=" njn (completed)" width="1034"/>
+                <img src="02453b7279e0ce6e96649dacb3d030ff58e19db68fbb38927c250474bbda8aec.png" title=" Mateo clicks on Button" width="1034"/>
+                <img src="db81975c4a022b71389404d46e2fef1de5f136ba25f00bb6b04b91f83c7bb1b6.png" title=" Mateo clicks on Button (completed)" width="1034"/>
+                <img src="db81975c4a022b71389404d46e2fef1de5f136ba25f00bb6b04b91f83c7bb1b6.png" title=" Mateo fill search field (completed)" width="1034"/>
+                <img src="db81975c4a022b71389404d46e2fef1de5f136ba25f00bb6b04b91f83c7bb1b6.png" title=" When He selects the search options
+| tipo | categoria | transaccion | ubicacion |
+| Vivienda | Casa | Arriendo | Medellin | (completed)" width="1034"/>
+                <img src="db81975c4a022b71389404d46e2fef1de5f136ba25f00bb6b04b91f83c7bb1b6.png" title=" Then He must see that the search return results" width="1034"/>
+                <img src="67634fe698dca78b08e05709842428f0a9716ef1e792a1b814b978536f0fad85.png" title=" Then list result should be (true)" width="1034"/>
+                <img src="67634fe698dca78b08e05709842428f0a9716ef1e792a1b814b978536f0fad85.png" title=" Then list result should be (true) (completed)" width="1034"/>
+                <img src="b22967883987a85955b9a4fd437d701524a9fc5d75817cd3cb5a65baa34acf2c.png" title=" Then He must see that the search return results (completed)" width="1034"/>
+                <img src="b22967883987a85955b9a4fd437d701524a9fc5d75817cd3cb5a65baa34acf2c.png" title=" Example #1: {tipo=Vivienda, categoria=Casa, transaccion=Arriendo, ubicacion=Medellin} (completed)" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Example #2: {tipo=Vivienda, categoria=Finca, transaccion=Venta, ubicacion=usin}" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Given User is in the fincaraiz home page" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Mateo opens the Finca raiz home page" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Given User is in the fincaraiz home page (completed)" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" When He selects the search options
+| tipo | categoria | transaccion | ubicacion |
+| Vivienda | Finca | Venta | usin |" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Mateo fill search field" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" njn" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" njn (completed)" width="1034"/>
+                <img src="c741db8d8d12b31ead8057fc0e406f5d04ce1325efe54bd69dd570378bb6c8d6.png" title=" Mateo clicks on categories container" width="1034"/>
+                <img src="00f68c7fa1e1790f85f259db8437f63845f80584b4b36a7b5d713601537e5d56.png" title=" Mateo clicks on categories container (completed)" width="1034"/>
+                <img src="00f68c7fa1e1790f85f259db8437f63845f80584b4b36a7b5d713601537e5d56.png" title=" Unhighlight an element" width="1034"/>
+                <img src="00f68c7fa1e1790f85f259db8437f63845f80584b4b36a7b5d713601537e5d56.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="00f68c7fa1e1790f85f259db8437f63845f80584b4b36a7b5d713601537e5d56.png" title=" njn" width="1034"/>
+                <img src="a84b5bc7163b8948436361d409b8ffcf27de28b4064078b4b5d4b836c4be0c52.png" title=" njn (completed)" width="1034"/>
+                <img src="a84b5bc7163b8948436361d409b8ffcf27de28b4064078b4b5d4b836c4be0c52.png" title=" Mateo clicks on category item" width="1034"/>
+                <img src="2af65f261dd35d76f394e5dad55ff38fe26b0319b6fa2111bae6a1bc40a2b668.png" title=" Mateo clicks on category item (completed)" width="1034"/>
+                <img src="2af65f261dd35d76f394e5dad55ff38fe26b0319b6fa2111bae6a1bc40a2b668.png" title=" Unhighlight an element" width="1034"/>
+                <img src="66ba83a16cf16edea5d10f7c8b60e302a752b4bd67723571ee050b3bf55f7009.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="66ba83a16cf16edea5d10f7c8b60e302a752b4bd67723571ee050b3bf55f7009.png" title=" njn" width="1034"/>
+                <img src="dcad1640a670025cd9708f3cee2b9aba71f7bcbf4f413a0e801f89554eea7a2e.png" title=" njn (completed)" width="1034"/>
+                <img src="dcad1640a670025cd9708f3cee2b9aba71f7bcbf4f413a0e801f89554eea7a2e.png" title=" Mateo clicks on categories container" width="1034"/>
+                <img src="b4ebf38966b08acb12225b7e3dd359093aa1c07fc5125641987144cd8ef22571.png" title=" Mateo clicks on categories container (completed)" width="1034"/>
+                <img src="b4ebf38966b08acb12225b7e3dd359093aa1c07fc5125641987144cd8ef22571.png" title=" Unhighlight an element" width="1034"/>
+                <img src="b4ebf38966b08acb12225b7e3dd359093aa1c07fc5125641987144cd8ef22571.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="07b254e418bc8ef5bc7290c30ffb7a599991e56d0a9427ea20c029a0f6bf3b13.png" title=" njn" width="1034"/>
+                <img src="07b254e418bc8ef5bc7290c30ffb7a599991e56d0a9427ea20c029a0f6bf3b13.png" title=" njn (completed)" width="1034"/>
+                <img src="07b254e418bc8ef5bc7290c30ffb7a599991e56d0a9427ea20c029a0f6bf3b13.png" title=" Mateo clicks on container transaction" width="1034"/>
+                <img src="3402de95fe190433aa24568ffbae1700f426547f3e43ab2e09550b6fa09ab198.png" title=" Mateo clicks on container transaction (completed)" width="1034"/>
+                <img src="3402de95fe190433aa24568ffbae1700f426547f3e43ab2e09550b6fa09ab198.png" title=" Mateo clicks on container transaction" width="1034"/>
+                <img src="7ae1f034b218e7ee062a909b806a53babc011166c589895308b2eac4440561b9.png" title=" Mateo clicks on container transaction (completed)" width="1034"/>
+                <img src="7ae1f034b218e7ee062a909b806a53babc011166c589895308b2eac4440561b9.png" title=" Unhighlight an element" width="1034"/>
+                <img src="7ae1f034b218e7ee062a909b806a53babc011166c589895308b2eac4440561b9.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="7ae1f034b218e7ee062a909b806a53babc011166c589895308b2eac4440561b9.png" title=" njn" width="1034"/>
+                <img src="f2531460b32c3c3652efa84daa3eaff2649661a6a9ddf2a23f39c02f7d7bcfb7.png" title=" njn (completed)" width="1034"/>
+                <img src="f2531460b32c3c3652efa84daa3eaff2649661a6a9ddf2a23f39c02f7d7bcfb7.png" title=" Mateo clicks on transaction type" width="1034"/>
+                <img src="1aaa6c152d8208ed10d4390d18cad1bb1dac5ae528d29c4f4cca3cd32a3f9586.png" title=" Mateo clicks on transaction type (completed)" width="1034"/>
+                <img src="1aaa6c152d8208ed10d4390d18cad1bb1dac5ae528d29c4f4cca3cd32a3f9586.png" title=" Unhighlight an element" width="1034"/>
+                <img src="1aaa6c152d8208ed10d4390d18cad1bb1dac5ae528d29c4f4cca3cd32a3f9586.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="1aaa6c152d8208ed10d4390d18cad1bb1dac5ae528d29c4f4cca3cd32a3f9586.png" title=" njn" width="1034"/>
+                <img src="17f1cde24a6386ffc80f5e2e3b89a9240464dc97faef0a8867df8663b91ec1c8.png" title=" njn (completed)" width="1034"/>
+                <img src="17f1cde24a6386ffc80f5e2e3b89a9240464dc97faef0a8867df8663b91ec1c8.png" title=" Mateo enters 'usin' into location search" width="1034"/>
+                <img src="6bffacc189b75ace5c97e3a6a89d9f8b244c864ea463c0ad96315cebbaa7f122.png" title=" Mateo enters 'usin' into location search (completed)" width="1034"/>
+                <img src="6bffacc189b75ace5c97e3a6a89d9f8b244c864ea463c0ad96315cebbaa7f122.png" title=" Unhighlight an element" width="1034"/>
+                <img src="6bffacc189b75ace5c97e3a6a89d9f8b244c864ea463c0ad96315cebbaa7f122.png" title=" Unhighlight an element (completed)" width="1034"/>
+                <img src="d0bae4a0b39e26d25ada200ada655eb8df2c169d30c22417ee9e707741f6cc5e.png" title=" njn" width="1034"/>
+                <img src="d0bae4a0b39e26d25ada200ada655eb8df2c169d30c22417ee9e707741f6cc5e.png" title=" njn (completed)" width="1034"/>
+                <img src="befe0e9952ce5bede101747e9d03f77d9a4053d7cc5b2bed5e25cd342fec9dc3.png" title=" Mateo clicks on Button" width="1034"/>
+                <img src="f715cbe72d23ba8998b4c7a4a04366ed16712439f8ed1e331a3580d0e73f92f1.png" title=" Mateo clicks on Button (completed)" width="1034"/>
+                <img src="f715cbe72d23ba8998b4c7a4a04366ed16712439f8ed1e331a3580d0e73f92f1.png" title=" Mateo fill search field (completed)" width="1034"/>
+                <img src="f715cbe72d23ba8998b4c7a4a04366ed16712439f8ed1e331a3580d0e73f92f1.png" title=" When He selects the search options
+| tipo | categoria | transaccion | ubicacion |
+| Vivienda | Finca | Venta | usin | (completed)" width="1034"/>
+                <img src="f715cbe72d23ba8998b4c7a4a04366ed16712439f8ed1e331a3580d0e73f92f1.png" title=" Then He must see that the search return results" width="1034"/>
+                <img src="f715cbe72d23ba8998b4c7a4a04366ed16712439f8ed1e331a3580d0e73f92f1.png" title=" Then list result should be (true)" width="1034"/>
+                <img src="f715cbe72d23ba8998b4c7a4a04366ed16712439f8ed1e331a3580d0e73f92f1.png" title=" Then list result should be (true) (completed): <span class='failing-color'>FAILURE</span>" width="1034"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.41</span>
+</div>
+</body>
+</html>

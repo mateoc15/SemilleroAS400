@@ -1,0 +1,55 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+
+import co.com.fincaraiz.qa.screenplayfincaraiz.models.SearchModel;
+import co.com.fincaraiz.qa.screenplayfincaraiz.tasks.FillSearchField;
+import co.com.fincaraiz.qa.screenplayfincaraiz.tasks.SelectResult;
+import co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.FincaRaizHomePage;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Open;
+import net.thucydides.core.annotations.Managed;
+
+public class ScreenplayFincaRaizStepDefinitions {
+	
+	public  static final int USUARIO_EN_ESCENA = 0;
+	@Managed(driver="chrome")
+	WebDriver hisBrowser; 
+	
+	private Actor user = Actor.named("Mateo");
+	
+	FincaRaizHomePage fincaRaizHomePage;
+	@Before 
+	public void setup() {
+		user.can(BrowseTheWeb. with(hisBrowser)); 
+	}
+
+	
+	
+	@Given("^He is in the fincaraiz home page$")
+	public void heIsInTheFincaraizHomePage() throws Exception {
+		user.wasAbleTo(Open.browserOn(fincaRaizHomePage));
+	}
+
+	@When("^He select the search options$")
+	public void heSelectTheSearchOptions(List<SearchModel> searchModel) throws Exception {
+		user.attemptsTo(FillSearchField.withValues(searchModel.get(USUARIO_EN_ESCENA)));
+		user.attemptsTo(SelectResult.getRandomResult());
+	}
+
+	@Then("^He must see that the results match with his search$")
+	public void heMustSeeThatTheResultsMatchWithHisSearch() throws Exception {
+
+	}
+	
+	
+
+
+}

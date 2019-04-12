@@ -1,0 +1,9 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces;
+
+import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.screenplay.targets.Target;
+
+public class ListResultPage extends PageObject{
+	public static final Target LIST_RESULT = Target.the("result list")
+			 .locatedBy("//ul[(contains(@id,'rowIndex_'))]");
+}

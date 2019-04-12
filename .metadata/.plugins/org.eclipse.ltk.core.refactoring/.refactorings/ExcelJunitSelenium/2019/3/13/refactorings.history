@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WebDriverConfig.java&apos; to &apos;FincaRaizSelenium/src/main/java/com.sophos.clases&apos;&#x0D;&#x0A;- Original project: &apos;ExcelJunitSelenium&apos;&#x0D;&#x0A;- Destination element: &apos;FincaRaizSelenium/src/main/java/com.sophos.clases&apos;&#x0D;&#x0A;- Original element: &apos;com.sophos.logic.WebDriverConfig.java&apos;" description="Copy compilation unit" destination="=FincaRaizSelenium/src\/main\/java&lt;com.sophos.clases" element1="/src\/main\/java&lt;com.sophos.logic{WebDriverConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1553484171047" units="1" version="1.0"/>
+</session>

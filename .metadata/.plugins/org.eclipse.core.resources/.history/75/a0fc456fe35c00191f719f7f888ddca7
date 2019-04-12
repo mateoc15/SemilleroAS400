@@ -1,0 +1,25 @@
+@SmokeTest
+Feature: Select a result
+  He want to select  result of my custom search
+
+  Background: 
+    Given He is in the fincaraiz home page
+    When He select the search options
+      | tipo     | categoria | transaccion | ubicacion |
+      | Vivienda | Casa      | Arriendo    | Medellin  |
+
+    Then He must see that the search return results
+
+  @tag3
+  Scenario Outline: Select a result
+    Given The page returned the result of the search
+    When he clicks on a random result
+    Then he checks the result matches with the search
+      | tipo   | categoria   | transaccion   | ubicacion   |
+      | <tipo> | <categoria> | <transaccion> | <ubicacion> |
+
+    Examples: 
+      | tipo     | categoria | transaccion | ubicacion |
+      | Vivienda | Casa      | Arriendo    | Medellin  |
+
+      

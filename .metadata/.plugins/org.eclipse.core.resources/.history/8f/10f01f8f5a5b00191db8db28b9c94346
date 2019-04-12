@@ -1,0 +1,15 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.util;
+
+public class Utilites {
+
+	public Utilites() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public static int randomNumber(int size) {
+		return (int) Math.floor(Math.random()*size);
+	}
+	
+
+}

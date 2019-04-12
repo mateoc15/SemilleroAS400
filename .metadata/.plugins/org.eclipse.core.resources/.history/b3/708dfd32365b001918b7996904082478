@@ -1,0 +1,43 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.tasks;
+
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import co.com.fincaraiz.qa.screenplayfincaraiz.models.SearchModel;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.waits.WaitUntil;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
+
+import static co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.FincaRaizHomePage.LOCATION_SEARCH;
+import static co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.FincaRaizHomePage.CATEGORY_ITEM;
+import static co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.FincaRaizHomePage.CATEGORIES_CONTAINER;;
+
+public class FillSearchField implements Task{
+	SearchModel search;
+	public FillSearchField(SearchModel search) {
+		this.search = search;
+		System.out.println();
+	}
+	
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		System.out.println(CATEGORY_ITEM.resolveAllFor(actor).get(1).getText());
+		actor.attemptsTo(
+				Enter.keyValues(search.getUbicacion()).into(LOCATION_SEARCH),
+				WaitUntil.the(CATEGORIES_CONTAINER, isClickable()),
+				Click.on(CATEGORIES_CONTAINER),
+				WaitUntil.the(CATEGORY_ITEM, isVisible()),
+				Click.on(CATEGORY_ITEM.resolveAllFor(actor).get(1))
+				
+				);
+		
+	}
+	
+	public static FillSearchField withValues(SearchModel searchModel) {
+		return instrumented(FillSearchField.class, searchModel);
+	}
+
+}

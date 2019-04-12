@@ -1,0 +1,27 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.interactions;
+
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.remote.server.handler.ExecuteAsyncScript;
+
+import net.serenitybdd.core.pages.WebElementFacade;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Interaction;
+import net.serenitybdd.screenplay.actions.ClickOnTarget;
+import net.serenitybdd.screenplay.targets.Target;
+import net.thucydides.core.annotations.Step;
+
+public class HighLightElement implements Interaction{
+    private final Target target;
+    public HighLightElement(Target target) {
+        this.target = target;
+	}
+	
+    @Step("{0} clicks on #target")
+    public <T extends Actor> void performAs(T theUser) {
+    	((JavascriptExecutor) theUser).executeScript("arguments[0].style.border='3px solid transparent'", target);
+    }
+
+
+}

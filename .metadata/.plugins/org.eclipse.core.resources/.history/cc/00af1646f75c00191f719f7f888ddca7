@@ -1,0 +1,10 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.exceptions;
+
+public class NoInterenetConnection extends AssertionError {
+	
+public static final String NO_INTERNET_CONNECTION="El elemento seleccionado no coincide con la busqueda realizada";
+	
+	public NoInterenetConnection(String message, Throwable cause) {
+		super(message, cause);
+	}
+}

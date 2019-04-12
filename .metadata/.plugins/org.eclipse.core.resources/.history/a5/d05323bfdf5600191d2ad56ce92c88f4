@@ -1,0 +1,9 @@
+package co.com.google.certificacion.miprimerscreenplay.exceptions;
+
+public class PhraseNotFound {
+
+	public PhraseNotFound() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,24 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.questions;
+
+import co.com.fincaraiz.qa.screenplayfincaraiz.models.SearchModel;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+
+public class PropertyDetails implements Question<Boolean>{
+	SearchModel search;
+	public PropertyDetails(SearchModel search) {
+		this.search=search;
+	}
+	
+	public static Object matchWithData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean answeredBy(Actor actor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

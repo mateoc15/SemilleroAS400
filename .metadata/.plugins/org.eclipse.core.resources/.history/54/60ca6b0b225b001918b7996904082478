@@ -1,0 +1,9 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions;
+
+public class ScreenplayFincaRaizStepDefinitions {
+
+	public ScreenplayFincaRaizStepDefinitions() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

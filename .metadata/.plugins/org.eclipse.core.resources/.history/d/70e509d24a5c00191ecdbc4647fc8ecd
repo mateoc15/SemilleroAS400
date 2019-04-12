@@ -1,0 +1,19 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.questions;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+
+public class PropertyDetails implements Question<Boolean>{
+
+	public static Object matchWithData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean answeredBy(Actor actor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Select a result" skipped="0" tests="2" time="62.42" timestamp="2019-04-12 08:44:31"><testcase name="Select a result"><failure message="El elemento seleccionado no coincide con la busqueda realizada - &#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">El elemento seleccionado no coincide con la busqueda realizada - 
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>El elemento seleccionado no coincide con la busqueda realizada - 
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions.SelectResultItemStepDefinitions.heChecksTheResultMatchesWithTheSearch(SelectResultItemStepDefinitions.java:53)&#13;
+✽.He checks the result matches with the search(src/test/resources/features/SelectResultItem.feature:17)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,36 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.util;
+
+import static co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.FincaRaizHomePage.CATEGORY_ITEM;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+
+import net.serenitybdd.core.pages.WebElementFacade;
+
+public class Utilites {
+
+	public Utilites() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public static int randomNumber(int size) {
+		return (int) Math.floor(Math.random()*size);
+	}
+	
+	
+	public static WebElementFacade getTheElement(List<WebElementFacade> listElements, String text) {
+		WebElementFacade element = null;
+		String text2;
+		for(int i=0; i<listElements.size(); i++) {
+			text2=listElements.get(i).findElement(By.xpath("label")).getText();
+			if(text.equals(text2)) {
+				return listElements.get(i);
+			}
+		}
+		return element;
+	}
+	
+
+}

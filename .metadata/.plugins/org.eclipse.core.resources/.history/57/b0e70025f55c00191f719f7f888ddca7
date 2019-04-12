@@ -1,0 +1,39 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.util;
+
+import java.io.IOException;
+import java.net.InetAddress;
+
+/**Utilidades
+ * @author SEMILLERO09
+ *
+ */
+public class Utilites {
+
+	/**
+	 * Constructor
+	 */
+	public Utilites() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	/**Método utilizado para generar un número
+	 * aleatorio y seleccionar un elemento de la 
+	 * lista de resultados de la búsqueda
+	 *
+	 * @param size
+	 * @return
+	 */
+	public static int randomNumber(int size) {
+		return (int) Math.floor(Math.random()*size);
+	}
+	
+	
+	public static boolean check() throws IOException {
+		InetAddress i = InetAddress.getByName("https://www.fincarraiz.com.co");
+		return i.isReachable(5000);
+	}
+	
+	
+
+}

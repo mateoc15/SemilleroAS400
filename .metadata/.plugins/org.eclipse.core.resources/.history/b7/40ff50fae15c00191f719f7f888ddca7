@@ -1,0 +1,13 @@
+@tag
+Feature: Look for an apartment
+  I want to search an apartment with the specific conditions
+
+  @tag2
+  Scenario: Custom search
+    Given He is in the fincaraiz home page
+    When He select the search options
+      | tipo     | categoria | transaccion | ubicacion |
+      | Vivienda | Casa      | Arriendo    | Medellin  |
+      | Vivienda | Finca     | Venta       | usin      |
+      | Vivienda | Casa      | Arriendo    | Bogota    |
+    Then He must see that the search return results

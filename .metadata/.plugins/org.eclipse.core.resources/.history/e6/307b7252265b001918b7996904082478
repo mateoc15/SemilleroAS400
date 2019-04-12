@@ -1,0 +1,9 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces;
+
+public class FincaRaizHomePage {
+
+	public FincaRaizHomePage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

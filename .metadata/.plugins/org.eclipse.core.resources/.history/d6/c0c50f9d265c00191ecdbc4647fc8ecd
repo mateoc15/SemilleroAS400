@@ -1,0 +1,12 @@
+
+@SmokeTest
+Feature: Select a result
+  I want to select  result of my custom search
+
+  
+
+  @tag2
+  Scenario Outline: Select a result
+    Given The page returned the result of the search
+    When I click on the first result
+    Then I go to the details page of the property

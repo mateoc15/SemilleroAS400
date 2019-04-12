@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Look for an apartment" tests="2" skipped="0" failures="1" errors="0" timestamp="2019-04-12T13:43:26" hostname="LAPTOP-LAFQ684S" time="65.74">
+  <properties/>
+  <testcase name="Custom search" classname="Look for an apartment" time="26.336"/>
+  <testcase name="Custom search" classname="Look for an apartment" time="39.4">
+    <failure message="java.lang.AssertionError: La busqueda no retornó resultados - &#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: La busqueda no retornó resultados - 
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:291)
+	at co.com.fincaraiz.qa.screenplayfincaraiz.stepdefinitions.ScreenplayFincaRaizStepDefinitions.heMustSeeThatTheSearchReturnResults(ScreenplayFincaRaizStepDefinitions.java:67)
+	at ✽.He must see that the search return results(src/test/resources/features/CustomSearch.feature:11)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Connection Successful
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Connection Successful
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></system-out>
+  <system-err><![CDATA[abr 12, 2019 8:43:28 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73) on port 39056
+Only local connections are allowed.
+abr 12, 2019 8:43:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+abr 12, 2019 8:43:52 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+abr 12, 2019 8:43:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+]]></system-err>
+</testsuite>

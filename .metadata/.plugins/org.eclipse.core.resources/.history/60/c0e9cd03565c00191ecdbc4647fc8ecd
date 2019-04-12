@@ -1,0 +1,38 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.questions;
+
+import co.com.fincaraiz.qa.screenplayfincaraiz.models.SearchModel;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Question;
+import net.serenitybdd.screenplay.annotations.Subject;
+
+import static co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces.PropertyDetailPage.CATEGORY_TRANSACTION;
+
+import org.apache.commons.lang3.StringUtils;
+
+@Subject("validar resultado")
+public class PropertyDetails implements Question<Boolean>{
+	SearchModel search;
+
+	public PropertyDetails(SearchModel search) {
+		this.search=search;
+	}
+	
+	@Override
+	public Boolean answeredBy(Actor actor) {
+		String textToCompare = CATEGORY_TRANSACTION.resolveFor(actor).getText();
+		String textToCompare2 = search.getCategoria()+" en "+search.getTransaccion();
+		String[] parts = textToCompare.split("\n");
+		String ubicacion =StringUtils.stripAccents(parts[1]);
+		System.out.println(ubicacion);
+		System.out.println(parts[0]+"  dff  "+textToCompare2);
+		System.out.println(ubicacion.contains(search.getUbicacion()));
+		return textToCompare==textToCompare2 && ubicacion.contains(search.getUbicacion());
+	}
+	
+	public static PropertyDetails matchWithData(SearchModel search) {
+		return new PropertyDetails(search);
+	}
+
+	
+
+}

@@ -1,0 +1,13 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.userinterfaces;
+
+import net.serenitybdd.core.pages.PageObject;
+import net.thucydides.core.annotations.DefaultUrl;
+
+@DefaultUrl("https://www.fincaraiz.com.co/")
+public class FincaRaizHomePage extends PageObject {
+
+	public FincaRaizHomePage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

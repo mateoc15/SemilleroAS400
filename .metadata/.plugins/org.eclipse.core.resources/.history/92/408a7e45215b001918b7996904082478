@@ -1,0 +1,9 @@
+package co.com.fincaraiz.qa.screenplayfincaraiz.runners;
+
+public class ScreenPlayFincaRaizRunner {
+
+	public ScreenPlayFincaRaizRunner() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
